@@ -1,0 +1,13 @@
+git status 
+Command: git
+Argument: status
+
+rm -rf ./Sample
+Command: rm
+Argument: ./Sample
+Option: -rf
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+Command: /usr/bin/ruby
+Argument: "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+Option: -e
