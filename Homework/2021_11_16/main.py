@@ -2,6 +2,7 @@ from create import create
 from delete import delete
 from modify_view import modify_view
 from view_lists_items import view_lists_items
+one_grocery_to_rule_them_all = {}
 
 def menu():
     choice = input("""
@@ -22,7 +23,7 @@ q - Quit
 def main():
     choice = menu()
     if choice == '1':
-        create()
+        create(one_grocery_to_rule_them_all)
     elif choice == '2':
         modify_view()
     elif choice == '3':
