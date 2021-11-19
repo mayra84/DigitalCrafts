@@ -1,9 +1,14 @@
+from pygame import mixer
 import os
 from final_scene import final_scene
 
 def the_two_towers():
 
     input('')
+    mixer.init()
+    mixer.music.load("/Users/mayra./Downloads/LOTR - The Majesty of Gondor (soundtrack suite).wav")
+    mixer.music.play()
+
     os.system('clear')
 
     input("""
@@ -41,6 +46,8 @@ And Frodo and Sam continue their trek to Mount Doom.
 Frodo and Sam end up being captured by Faramir🧔🏽‍♀️, son of Denethor who is the Ruling Steward of Gondor.
     """)
 
+    mixer.music.fadeout(10000)
+
     while True:
         user_choice_4 = input("""
     What happens next: 
@@ -60,6 +67,8 @@ Faramir presents his father with the One Ring. Denethor is easily influenced by 
 
 
 """) 
+            mixer.music.load("/Users/mayra./Downloads/Fail - sound effect.wav")
+            mixer.music.play()
             input('')
             break
         elif user_choice_4 == '2':

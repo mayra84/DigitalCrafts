@@ -1,7 +1,16 @@
+from pygame import mixer
 import os
 from start import start
 
 def intro():
+
+    mixer.init()
+    mixer.music.load("/Users/mayra./Downloads/The Fellowship Theme - Lord of the Rings _ EPIC VERSION.wav")
+    mixer.music.play()
+    # mixer.sound.set_volume()
+
+    os.system('clear')
+   
     input("""
   _______ _            _                   _          __   _   _            _______                  _             _ 
  |__   __| |          | |                 | |        / _| | | | |          |__   __|                (_)           | |
@@ -22,19 +31,21 @@ def intro():
 
     beginning()
 
+
 def beginning():
     user_choice_1 = input("""
     What happens next:
-    1 - Elrond stares at Isildur as he walks away with the ring...
-    2 - Elrond tackles Isildur, takes the ring, and throws it into the fires of Mount Doom...
-    q - You quit and forsake the peoples of Middle-Earth.
-    :""")
-    # print(user_choice_1)
+        1 - Elrond stares at Isildur as he walks away with the ring...
+        2 - Elrond tackles Isildur, takes the ring, and throws it into the fires of Mount Doom...
+        q - You quit and forsake the peoples of Middle-Earth.
+        :""")
+        # print(user_choice_1)
     choice_options = ['1', '2','q']
     if user_choice_1 not in choice_options:
         print('\nThat is not a valid option. Please try again.\n')
         beginning()
     elif user_choice_1 == '1' or user_choice_1 == '2':
+        mixer.music.fadeout(6000)
         start(user_choice_1)
     elif user_choice_1 == 'q':
         print('\nSauron thanks you.\n')
@@ -57,15 +68,3 @@ Would you like to play again?
     # return user_choice_1
 
 intro()
-
-# def sound(file):
-#     sound = mixer.Sound("audio/%s" % file)
-#     return mixer.Sound.play(sound)
-
-# sound("impressive.wav")
-
-# # Music
-# from pygame import mixer
-# mixer.init()
-# mixer.music.load("audio/TK_Intro_2.wav")
-# mixer.music.play(-1)

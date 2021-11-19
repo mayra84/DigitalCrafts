@@ -1,3 +1,4 @@
+from pygame import mixer
 import os
 from the_two_towers import the_two_towers
 
@@ -23,8 +24,12 @@ Chapter 2: Gandalf vs Balrog
 
     input('\nEveryone makes it to the Mines of Moria only to discover a barren castle. They had been trapped and killed by Orcs.')  
     
+    mixer.init()
+    mixer.music.load("/Users/mayra./Downloads/THE LORD OF THE RING - URUK HAI THEME.wav")
+    mixer.music.play()
+
     input('\nThey quietly try to make their way through the castle when... ') 
-    
+
     input('\nThey encounter a cave troll!🐏👹🔥')
 
     input("""
@@ -41,6 +46,7 @@ Gandalf the Grey courageously confronts the Balrog!
     input("""As they begin to walk away, the Balrog cracks its whip and grabs Gandalf by the leg, pulling Gandalf down!😧""")
 
     input("""\nGandalf is holding on to the edge and says, \"Fly, you fools!\"""")
+    
 
     while True:
         user_choice_3 = input("""
@@ -55,10 +61,13 @@ Gandalf the Grey courageously confronts the Balrog!
             False
         elif user_choice_3== '1':
             print('\nThanks to Gandalf\'s selfless sacrifice, the rest of the Fellowship manages to escape and make it out of the castle.\n') 
+            mixer.music.fadeout(6000)
             the_two_towers()
             break
         elif user_choice_3 == '2':
             print('\nEveryone makes it out of the castle safely! They make it to the river and attacked by a hoard of Uruk-hai!! Everyone dies. RIP.🪦🪦🪦🪦🪦🪦🪦🪦🪦\n')
+            mixer.music.load("/Users/mayra./Downloads/Fail - sound effect.wav")
+            mixer.music.play()
             input('')
             break
         elif user_choice_3 == 'q':

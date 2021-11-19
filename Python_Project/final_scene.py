@@ -1,9 +1,13 @@
+from pygame import mixer
 import os
 import time
 
 def final_scene():
     
     input('')
+    mixer.init()
+    mixer.music.load("/Users/mayra./Downloads/Sauron (Mordor) Theme - Lord of the Rings _ EPIC VERSION.wav")
+    mixer.music.play()
     os.system('clear')
 
     input("""
@@ -18,13 +22,14 @@ Chapter 4: The Final Scene
   
 """)
 
+
     input('\nThere it is. Mount Doom. Finally.🌋\n')
 
     input('\nAfter all the obstacles and friends lost along the way, Sam and Frodo arrive at Mount Doom.\n ')
 
     input('\nFrodo\'s body fails him.\n')
 
-    input("""\"I cannot go on, Sam.\" All I can see is the Eye of Sauron. There's nothing, no veil between me and the wheel of fire. I can see him with my waking eyes!\"""")
+    input("""\"I cannot go on, Sam. All I can see is the Eye of Sauron. There's nothing, no veil between me and the wheel of fire. I can see him with my waking eyes!\"""")
     
     input("""\n\"Then let us be rid of it once and for all! Come on Mr. Frodo, I can't carry it for you, but I can carry you!\" """)
 
@@ -44,17 +49,21 @@ Chapter 4: The Final Scene
         elif user_choice_5== '1':
             input('\nAt the edge of fulfilling his quest, Frodo finally yields to the will of the One Ring.\n') 
             
-            input('\nHe is influenced by its evil to return the ring to Sauron.👹💍 Mission failed. Everyone dies. RIP.🪦\n') 
+            input('\nHe is influenced by its evil to return the ring to Sauron.👹💍 Mission failed. Everyone dies. RIP.🪦\n')
+            mixer.music.load("/Users/mayra./Downloads/Fail - sound effect.wav")
+            mixer.music.play() 
             break
 
         elif user_choice_5 == '2':
             input('\nA fight with Smeagol ensues and Sam is able to hold him back while Frodo makes it to the heart of Mount Doom.\n') 
             
-            input('\nAt the edge if fulfilling his quest, Frodo finally yields to the will of the One Ring and puts it on his finger, betraying the quest.\n')
+            input('\nAt the edge of fulfilling his quest, Frodo finally yields to the will of the One Ring and puts it on his finger, betraying the quest.\n')
 
             input('\nBut Smeagol knocks out Sam and charges at Frodo!\n')
 
             input('\nSmeagol manages to bite off Frodo\'s finger which held the Ring.\n')
+
+            mixer.music.fadeout(4000)
 
             input('\nThey begin to fight for the Ring and Smeagol falls into the fires of Mount Doom along with The One Ring to Rule Them All.\n')
 
@@ -62,8 +71,13 @@ Chapter 4: The Final Scene
 
             print('\n\n\nSauron and The One Ring are finally destroyed.\n\n\n')
             
+
+
+            mixer.init()
+            mixer.music.load("/Users/mayra./Downloads/The Shire.wav")
+            mixer.music.play()
             time.sleep(5)
-            
+            os.system('clear')
             
             print("""
 
@@ -82,7 +96,7 @@ Chapter 4: The Final Scene
 *                 *  *               *              * *  *                        *                             *                                  * *      *  
 
 
-I have found that it is the small everyday deed of ordinary folks that keep the darkness at bay. Small acts of kindness and love." \n - Gandalf (J.R.R. Tolkien
+I have found that it is the small everyday deed of ordinary folks that keep the darkness at bay. Small acts of kindness and love." \n - Gandalf (J.R.R. Tolkien)
 
 
 * ** * *   *  **  *  *   **   *   * *  **  ****  *   ** *   *      **   **   ** **   *   *  ** *   *   **    *  * * *   * *    **       ** ** *   * * *     ** 
