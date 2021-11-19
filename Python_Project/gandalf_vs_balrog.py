@@ -22,11 +22,12 @@ Chapter 2: Gandalf vs Balrog
 
     input('The Fellowship- composed of a wizard, two men, an elf, a dwarf, and four hobbits- decide to go to the Mines of Moria, Gimli\'s👨🏾‍🚒 relatives home.')
 
-    input('\nEveryone makes it to the Mines of Moria only to discover a barren castle. They had been trapped and killed by Orcs.')  
-    
     mixer.init()
     mixer.music.load("/Users/mayra./Downloads/THE LORD OF THE RING - URUK HAI THEME.wav")
     mixer.music.play()
+    
+    input('\nEveryone makes it to the Mines of Moria only to discover a barren castle. They had been trapped and killed by Orcs.')  
+    
 
     input('\nThey quietly try to make their way through the castle when... ') 
 

@@ -32,6 +32,7 @@ Chapter 1: The Fellowship of the Terminal
     
 
     while True: 
+        mixer.music.fadeout(6000)
         user_choice_2 = input("""
     What happens next: 
     1 - Frodo is ignored and the council continues to deliberate the fate of the Ring... 
@@ -50,7 +51,6 @@ Chapter 1: The Fellowship of the Terminal
             input('')
             break
         elif user_choice_2 == '2':
-            mixer.music.fadeout(6000)
             print("""
 Take these, it's dangerous to go out there alone:
 🧔🏻‍♀️🧝🏻‍♂️🧙🏻‍♂️🧑🏻‍🦱👦🏼🧑🏼‍🌾🧑🏼‍🌾🧔🏼👨🏾‍🚒

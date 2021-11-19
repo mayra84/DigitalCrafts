@@ -33,6 +33,7 @@ def intro():
 
 
 def beginning():
+    mixer.music.fadeout(6000)
     user_choice_1 = input("""
     What happens next:
         1 - Elrond stares at Isildur as he walks away with the ring...
@@ -45,7 +46,6 @@ def beginning():
         print('\nThat is not a valid option. Please try again.\n')
         beginning()
     elif user_choice_1 == '1' or user_choice_1 == '2':
-        mixer.music.fadeout(6000)
         start(user_choice_1)
     elif user_choice_1 == 'q':
         print('\nSauron thanks you.\n')

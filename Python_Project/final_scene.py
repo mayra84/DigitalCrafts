@@ -61,9 +61,9 @@ Chapter 4: The Final Scene
 
             input('\nBut Smeagol knocks out Sam and charges at Frodo!\n')
 
-            input('\nSmeagol manages to bite off Frodo\'s finger which held the Ring.\n')
-
             mixer.music.fadeout(4000)
+            
+            input('\nSmeagol manages to bite off Frodo\'s finger which held the Ring.\n')
 
             input('\nThey begin to fight for the Ring and Smeagol falls into the fires of Mount Doom along with The One Ring to Rule Them All.\n')
 
