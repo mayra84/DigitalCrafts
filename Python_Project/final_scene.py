@@ -6,7 +6,7 @@ def final_scene():
     
     input('')
     mixer.init()
-    mixer.music.load("/Users/mayra./Downloads/Sauron (Mordor) Theme - Lord of the Rings _ EPIC VERSION.wav")
+    mixer.music.load("./sounds/Sauron (Mordor) Theme - Lord of the Rings _ EPIC VERSION.wav")
     mixer.music.play()
     os.system('clear')
 
@@ -50,7 +50,7 @@ Chapter 4: The Final Scene
             input('\nAt the edge of fulfilling his quest, Frodo finally yields to the will of the One Ring.\n') 
             
             input('\nHe is influenced by its evil to return the ring to Sauron.👹💍 Mission failed. Everyone dies. RIP.🪦\n')
-            mixer.music.load("/Users/mayra./Downloads/Fail - sound effect.wav")
+            mixer.music.load("./sounds/Fail - sound effect.wav")
             mixer.music.play() 
             break
 
@@ -74,7 +74,7 @@ Chapter 4: The Final Scene
 
 
             mixer.init()
-            mixer.music.load("/Users/mayra./Downloads/The Shire.wav")
+            mixer.music.load("./sounds/The Shire.wav")
             mixer.music.play()
             time.sleep(5)
             os.system('clear')
