@@ -1,0 +1,12 @@
+body {
+    background: darkcyan;
+}
+
+ul {
+    background: cornsilk;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    box-sizing: content-box;
+}
